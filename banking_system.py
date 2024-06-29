@@ -1,9 +1,10 @@
+# To use abstract variables, should import abstract methods
 from abc import ABC, abstractmethod
 
 class Account(ABC):
     def __init__(self, owner, balance=0):
         self.owner = owner
-        self.__balance = balance # Encapsulated Attribute
+        self.__balance = balance # Encapsulated Attribute to ensure privacy
 
     @abstractmethod
     def deposit(self, amount):
@@ -71,3 +72,5 @@ print_account_details(checking)
 # Applying interest to the savings account
 savings.apply_interest()
 print_account_details(savings)
+
+

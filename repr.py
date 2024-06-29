@@ -4,14 +4,16 @@ class Book:
         self.author = author
         self.year = year
 
+# Print information about an obejct. Similar to call and print an object.
     def __repr__(self):
-        return f"Book(title='{self.title}', author='{self.author}', year={self.year})"
+        return f"Book(title='{self.title}, author='{self.author}, year={self.year})"
     
-# Ceating an instance of Book
-book1 = Book("1984", "George Orwell", 1949)
+# Creating an instance of Book
+WutheringHeights = Book("Wuthering Heights", "Emily Bronte", 1847)
 
-# Using repr to get the string representation
-print(repr(book1))
+#using repr method to get the string representation
+print(repr(WutheringHeights))
 
-# Printing the object directly also calls __repr__
-print(book1)
+print(WutheringHeights)
+
+
